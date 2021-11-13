@@ -1,0 +1,608 @@
+{
+  "bytes": 14420558,
+  "datahub": {
+    "created": "2018-06-27T15:35:23.891438",
+    "findability": "published",
+    "flowid": "five-thirty-eight/comic-characters/4",
+    "modified": "2018-06-28T07:38:58.190874",
+    "owner": "five-thirty-eight",
+    "ownerid": "five-thirty-eight"
+  },
+  "hash": "006c66f1a38c81aeef2e0665d22884be",
+  "id": "five-thirty-eight/comic-characters",
+  "licences": [
+    {
+      "name": "odc-pddl",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and Licence (PDDL)"
+    }
+  ],
+  "name": "comic-characters",
+  "resources": [
+    {
+      "bytes": 1105602,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/87586cc26d0d22a05045e53bda400bdf.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "dc-wikia-data_original",
+      "path": "archive/dc-wikia-data.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "page_id",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "urlslug",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "align",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "eye",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "hair",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "sex",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "gsm",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "alive",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "appearances",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "first appearance",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "year",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 2406623,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/2b0170d5241bc297fd7e8cc942912654.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "marvel-wikia-data_original",
+      "path": "archive/marvel-wikia-data.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "page_id",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "urlslug",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "align",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "eye",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "hair",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "sex",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "gsm",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "alive",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "appearances",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "first appearance",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "year",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      }
+    },
+    {
+      "bytes": 1368,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmpx1kjjb9u/five-thirty-eight/comic-characters/validation_report/data/bef10385f14c7cdab564e79466a66a9b/validation_report.json",
+      "format": "json",
+      "hash": "bef10385f14c7cdab564e79466a66a9b",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 1112498,
+      "datahub": {
+        "derivedFrom": [
+          "dc-wikia-data"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpx1kjjb9u/five-thirty-eight/comic-characters/dc-wikia-data_csv/data/f851508a1dc1c60f4a8ca3a922540fb9/dc-wikia-data_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "f851508a1dc1c60f4a8ca3a922540fb9",
+      "mediatype": "text/csv",
+      "name": "dc-wikia-data_csv",
+      "path": "data/dc-wikia-data_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "rowcount": 6896,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "page_id",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "urlslug",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "align",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "eye",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "hair",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "sex",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "gsm",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "alive",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "appearances",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "first appearance",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "year",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 2422999,
+      "datahub": {
+        "derivedFrom": [
+          "marvel-wikia-data"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "caseSensitiveHeader": false,
+        "delimiter": ",",
+        "doubleQuote": true,
+        "header": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmpx1kjjb9u/five-thirty-eight/comic-characters/marvel-wikia-data_csv/data/69f93997db6d9caaa1ffef3d24e5bd41/marvel-wikia-data_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "69f93997db6d9caaa1ffef3d24e5bd41",
+      "mediatype": "text/csv",
+      "name": "marvel-wikia-data_csv",
+      "path": "data/marvel-wikia-data_csv.csv",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "rowcount": 16376,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "page_id",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "urlslug",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "align",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "eye",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "hair",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "sex",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "gsm",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "alive",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "appearances",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "first appearance",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "year",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 2241920,
+      "datahub": {
+        "derivedFrom": [
+          "dc-wikia-data"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "/tmp/tmpx1kjjb9u/five-thirty-eight/comic-characters/dc-wikia-data_json/data/8b35699325a97475673d4255ab21d4df/dc-wikia-data_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "8b35699325a97475673d4255ab21d4df",
+      "mediatype": "text/csv",
+      "name": "dc-wikia-data_json",
+      "path": "data/dc-wikia-data_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "rowcount": 6896,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "page_id",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "urlslug",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "align",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "eye",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "hair",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "sex",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "gsm",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "alive",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "appearances",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "first appearance",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "year",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 5127733,
+      "datahub": {
+        "derivedFrom": [
+          "marvel-wikia-data"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "/tmp/tmpx1kjjb9u/five-thirty-eight/comic-characters/marvel-wikia-data_json/data/0e66dd379500896088dc053e06aade1b/marvel-wikia-data_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "0e66dd379500896088dc053e06aade1b",
+      "mediatype": "text/csv",
+      "name": "marvel-wikia-data_json",
+      "path": "data/marvel-wikia-data_json.json",
+      "pathType": "local",
+      "profile": "tabular-data-resource",
+      "rowcount": 16376,
+      "schema": {
+        "fields": [
+          {
+            "format": "default",
+            "name": "page_id",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "urlslug",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "align",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "eye",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "hair",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "sex",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "gsm",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "alive",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "appearances",
+            "type": "integer"
+          },
+          {
+            "format": "default",
+            "name": "first appearance",
+            "type": "string"
+          },
+          {
+            "format": "default",
+            "name": "year",
+            "type": "integer"
+          }
+        ],
+        "missingValues": [
+          ""
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 1815,
+      "dpp:streamedFrom": "/tmp/tmp8a05s_go/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "sources": [
+    {
+      "path": "https://github.com/fivethirtyeight/data/tree/master/comic-characters",
+      "title": "FiveThirtyEight - Comic Characters"
+    }
+  ],
+  "title": "Comic Characters"
+}
