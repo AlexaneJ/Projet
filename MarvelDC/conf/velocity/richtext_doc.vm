@@ -1,0 +1,45 @@
+#**
+ *  Render a complex document in the results list
+ *#
+
+## Name
+#if($doc.getFieldValue('name'))
+<div>
+<b>Name</b>: #field('name')
+</div>
+#end
+## Urlslug
+#if($doc.getFieldValue('urlslug'))
+<div>
+<b>Urlslug</b>: #field('urlslug')
+</div>
+#end
+## Secrecy
+#if($doc.getFieldValue('secrecy'))
+<div>
+<b>Secrecy</b>: #field('secrecy')
+</div>
+#end
+## Align
+#if($doc.getFieldValue('align'))
+<div>
+<b>Align</b>: #field('align')
+</div>
+#end
+## Year
+#if($doc.getFieldValue('year'))
+<div>
+<b>Year</b>: #field('year')
+</div>
+#end
+## Genre
+#if($doc.getFieldValue('genre'))
+<div>
+<b>Genre</b>: #field('genre')
+</div>
+#end
+
+
+</div> ## div class=mlt
+
+#parse('debug.vm')
