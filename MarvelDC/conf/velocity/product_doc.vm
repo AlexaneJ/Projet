@@ -2,16 +2,26 @@
  *  Render a hit representing a Product
  *  assumed to have a field called "name"
  *#
-
-<div class="result-title"><b>#field('name')</b></div>
-##do we have a physical store for this product
-#set($store = $doc.getFieldValue('store'))
-#if($store)<div class="map"><img src="http://maps.google.com/maps/api/staticmap?&zoom=12&size=150x80&maptype=roadmap&markers=$doc.getFieldValue('store')&sensor=false" /><div><small><a target="_map" href="http://maps.google.com/?q=$store&amp;source=embed">Larger Map</a></small></div></div>#end
-<div>Id: #field('id')</div>
-<div>URL: <a href=#field('urlslug') target=_blank>page wiki</a></div>
-<div>Secrecy: #field('secrecy')</div>
-<div>Align: #field('align')</div>
-<div>Year: #field('year')</div>
+<span class="general">
+<div class="result-title"><span class="title">#field('name')</span></div>
+<div><span class="id">Id: #field('id')</span></div>
+<br/>
+<div><u>URL:</u> <span class="wiki"><a href=#field('urlslug') target=_blank>page wiki du personnage</a><span></div>
+<div><big><u>Genre:</u> <i><b>#field('genre')</i></b></big></div>
+<div><u>Secrecy of the character's identity:</u> #field('secrecy')</div>
+<div><u>Align:</u> #field('align')</div>
+<div><u>Year:</u> <b>#field('year')</b></div>
+<br/>
+<div>Is the character alive? <i><b>#field('alive')</b></i></div>
+<div>How many times did the character appear? #field('appearances')</div>
+<br/>
+<div><span class="chara">Other characteristics : </span></div>
+ <div class="row">
+  <div class="column"><u>Sex:</u> #field('sex')</div>
+  <div class="column"><u>Hair:</u> #field('hair')</div>
+  <div class="column"><u>Eye:</u> #field('eye')</div>
+</div> 
+<span>
 <div class="mlt">
   #set($mlt = $mltResults.get($docId))
   #set($mltOn = $params.getBool('mlt'))

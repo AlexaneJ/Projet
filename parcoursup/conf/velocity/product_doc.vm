@@ -1,0 +1,29 @@
+#**
+ *  Render a hit representing a Product
+ *  assumed to have a field called "name"
+ *#
+
+<div class="result-title"><b>#field('institut')</b><span class="mlt">   #if($params.getBool('mlt', false) == false)<a href="#lensNoQ&q=id:$docId&mlt=true">More Like This</a>#end</span></div>
+<div>Id: #field('id')</div>
+<div>Filière: #field('filiere')</div>
+<div>Sélectivité: #field('selectivite')</div>
+<div>Voeux: #field('souhaits')</div>
+<div>Région: #field('region')</div>
+<div>Département: #field('dep_lib')</div>
+<div>Code du département: #field('dep')</div>
+<div>Session: #field('session')</div>
+<div>Type: #field('type')</div>
+<div>Regroupement: #field('regroupement')</div>
+<div>Code: #field('code')</div>
+<div class="mlt">
+  #set($mlt = $mltResults.get($docId))
+  #set($mltOn = $params.getBool('mlt'))
+  #if($mltOn == true)<div class="field-name">Similar Items</div>#end
+  #if ($mltOn && $mlt && $mlt.size() > 0)
+  <ul>
+
+      </li>
+    #end
+  </ul>
+</div>
+#parse('debug.vm')

@@ -38,6 +38,37 @@
 <b>Genre</b>: #field('genre')
 </div>
 #end
+## GSM
+#if($doc.getFieldValue('gsm'))
+<div>
+<b>Sexual orientation</b>: #field('gsm')
+</div>
+#end
+## Sex
+#if($doc.getFieldValue('sex'))
+<div>
+<b>Sex</b>: #field('sex')
+</div>
+#end
+## Hair
+#if($doc.getFieldValue('hair'))
+<div>
+<b>Hair</b>: #field('hair')
+</div>
+#end
+## Eye
+#if($doc.getFieldValue('eye'))
+<div>
+<b>Eye</b>: #field('eye')
+</div>
+#end
+## Appearance
+#if($doc.getFieldValue('appearances'))
+<div>
+<b>Appearances</b>: #field('appearances')
+</div>
+#end
+
 
 
 </div> ## div class=mlt
